@@ -113,6 +113,7 @@ ul {
   list-style-type: none;
   margin-bottom: 50px;
   padding: 0;
+  color:#ccc; 
 }
 
 .footer {

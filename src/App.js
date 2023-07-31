@@ -9,7 +9,7 @@ const Section = ({ sectionData, isBox }) => {
   return (
     <>
       <h3>{caption}</h3>
-      {positions.map(({ name, price, price2 }, i, arr) => (
+      {positions.map(({ name, price, price2, name2, name3 }, i, arr) => (
         <div
           key={i}
           className={`menu_position ${
@@ -24,6 +24,8 @@ const Section = ({ sectionData, isBox }) => {
         >
           <div className="positionNameBox">
             <p className="positionName">{name}</p>
+            <p className="positionName name2">{name2}</p>
+            <p className="positionName name3">{name3}</p>
           </div>
           <div>
             <p className="price">{price}</p>
@@ -76,7 +78,7 @@ const App = () => (
       <Section sectionData={menu.set5} />
       <Section sectionData={menu.fri} />
       <Section sectionData={menu.hotDog} />
-      <Section sectionData={menu.box} isBox />
+      <Section sectionData={menu.box} />
       <List sectionData={menu.sauce} />
     </div>
     <div className="footer">
