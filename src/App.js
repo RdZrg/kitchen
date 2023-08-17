@@ -71,6 +71,11 @@ const App = () => (
       <div className="anotation">
         *Соєвий соус, прибори, імбир, васабі - входять у вартість замовлення.
       </div>
+      <Section sectionData={(menu.nigiri, gankans)} />
+      <Section sectionData={menu.salads} />
+      <Section sectionData={menu.breakfast} />
+      <Section sectionData={menu.burgers} />
+      <Section sectionData={menu.coffee} />
       <Section sectionData={menu.set1} />
       <Section sectionData={menu.set2} />
       <Section sectionData={menu.set3} />
